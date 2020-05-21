@@ -4,542 +4,408 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
+body,h1,h5 {font-family: "Arial", sans-serif}
 body, html {height: 100%}
-body,h1,h2,h3,h4,h5,h6 {font-family: "", sans-serif}
-.menu {display: none}
 .bgimg {
-  background-repeat: no-repeat;
+  background-image: ;
+  min-height: 100%;
+  background-position: center;
   background-size: cover;
-  background-image: url("");
-  min-height: 90%;
 }
 </style>
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top w3-hide-small">
-  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
-    <a href="#" class="w3-bar-item w3-button">Inicio</a>
-    <a href="#menu" class="w3-bar-item w3-button">Menú</a>
-    <a href="#about" class="w3-bar-item w3-button">Info</a>
-    </div>
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+    <p></p>
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('yogui').style.display='block'" class="w3-button w3-black">Hamburgesería Yogui</button></p>    
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-orange">Hamburguesas</button></p>
+    <p><button onclick="document.getElementById('hotdog').style.display='block'" class="w3-button w3-orange">Perritos</button></p>
+    <p><button onclick="document.getElementById('camp').style.display='block'" class="w3-button w3-orange">Camperos</button></p>
+    <p><button onclick="document.getElementById('pinch').style.display='block'" class="w3-button w3-orange">Pinchitos</button></p>
+    <p><button onclick="document.getElementById('menu3').style.display='block'" class="w3-button w3-orange">Pepitos</button></p>  
+    <p><button onclick="document.getElementById('menu4').style.display='block'" class="w3-button w3-orange">Ensaladas</button></p>  
+    <p><button onclick="document.getElementById('pizza').style.display='block'" class="w3-button w3-orange">Pizzas</button></p>
+    <p><button onclick="document.getElementById('menu6').style.display='block'" class="w3-button w3-orange">Papas Asadas</button></p>    
+    <p><button onclick="document.getElementById('menu7').style.display='block'" class="w3-button w3-orange">Acompañamientos</button></p>
+    <p><button onclick="document.getElementById('menu5').style.display='block'" class="w3-button w3-orange">Bebidas</button></p>  
+    <p><button onclick="document.getElementById('info').style.display='block'" class="w3-button w3-black">Info</button></p>   
+      
+    <br><br><br><br>
+   </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge"></p>
+    <p class="w3-large"></p>
+  </div>
 </div>
-  
 
-<!-- Menu Container -->
-<div class="w3-container w3-black w3-padding-64 w3-xlarge" id="menu">
-  <div class="w3-content">
-  
-    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Hamburguesería Yogui</h1>
-    <div class="w3-row w3-center w3-border w3-border-dark-grey">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Hamburguesas');" id="myLink">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Hamburguesas</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Perritos');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Perritos</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Camperos');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Camperos</div>
-      </a>
-       <a href="javascript:void(0)" onclick="openMenu(event, 'Pinchitos');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pinchitos</div>
-      </a>
-       <a href="javascript:void(0)" onclick="openMenu(event, 'Pepitos');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pepitos</div>
-      </a>
-       <a href="javascript:void(0)" onclick="openMenu(event, 'Ensaladas');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Ensaladas</div>
-      </a>
-       <a href="javascript:void(0)" onclick="openMenu(event, 'Pizzas');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizzas</div>
-      </a>
-       <a href="javascript:void(0)" onclick="openMenu(event, 'Papas Asadas');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Papas Asadas</div>
-      </a>
-       <a href="javascript:void(0)" onclick="openMenu(event, 'Acompañamientos');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Acompañamientos</div>
-      </a>
-       <a href="javascript:void(0)" onclick="openMenu(event, 'Bebidas');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Bebidas</div>
-      </a>
+<!-- Menu Yogui -->
+<div id="yogui" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('yogui').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Hamburguesería Yogui</h1>
     </div>
+    <div class="w3-container">
+        <h4><b>MANTENGA LA DISTANCIA DE SEGURIDAD</b></h4>
+        <h5>En nuestras intalaciones realizamos un protocolo de limpieza y desinfección constante, siguiendo las recomendaciones de las autoridades sanitarias. </h5>
+        <br>
+        <h4><b>Horario:</b></h4>
+        <h5><b>Rincón y Cala del Moral</b>
+            <br><br>Todos los días de 19:00 a 00:00h <br>
+           Sábados y Domingos de 13:00 a 16:00h.</h5>
+        <br>
+        <h5><b>C. C. Rincón de la Victoria</b>
+            <br><br>De Domingo a Jueves de 12:30 a 23:00h <br>
+            Viernes y Sábados de 12:30 a 00:00h.</h5>
+        <br>
+    </div>
+   </div>
+</div>
+    
+    <!-- Menu Info -->
+<div id="info" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('info').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Información</h1>
+    </div>
+    <div class="w3-container">
+        <h4><b>Precios I.V.A. incluido.</b></h4>
+        <h5>Ingrediente extra:<br>
+         en Pizza 0,80€<br>
+         en bocadillo 0,60€ </h5>
+        <br>
+        <h4><b>Horario:</b></h4>
+        <h5><b>Rincón y Cala del Moral</b>
+            <br><br>Todos los días de 19:00 a 00:00h <br>
+           Sábados y Domingos de 13:00 a 16:00h.</h5>
+        <br>
+        <h5><b>C. C. Rincón de la Victoria</b>
+            <br><br>De Domingo a Jueves de 12:30 a 23:00h <br>
+            Viernes y Sábados de 12:30 a 00:00h.</h5>
+        <br>
+    </div>
+   </div>
+</div>
 
 <!-- Menu Hamburguesas -->
-    <div id="Hamburguesas" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>1. Completa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">3.40 €</span></h1>
-      <p class="w3-text-grey">lechuga, tomate, cebolla, mahonesa, ketchup y mostaza.</p>
-      <hr>
-   
-      <h1><b>2. Queso</b> <span class="w3-right w3-tag w3-dark-grey w3-round">3.80 €</span></h1>
-      <p class="w3-text-grey">queso, lechuga, tomate y mahonesa.</p>
-      <hr>
-      
-      <h1><b>3. Bacon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">3.80 €</span></h1>
-      <p class="w3-text-grey">bacon, lechuga, tomate y mahonesa.</p>
-      <hr>
-
-      <h1><b>4. Queso Bacon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">4.10 €</span></h1>
-      <p class="w3-text-grey">queso, bacon, lechuga, tomate y mahonesa.</p>
-      <hr>
-
-      <h1><b>5. Serrana</b><span class="w3-right w3-tag w3-dark-grey w3-round">4.10 €</span></h1>
-      <p class="w3-text-grey">queso, jamón serrano, lechuga, tomate y mahonesa.</p>
-      <hr>
-
-      <h1><b>6. Cresta</b><span class="w3-right w3-tag w3-dark-grey w3-round">3.90 €</span></h1>
-      <p class="w3-text-grey">lechuga, tomate y mahonesa.</p>
-      <hr>
-      
-      <h1><b>6. Mixta</b><span class="w3-right w3-tag w3-dark-grey w3-round">4.30 €</span></h1>
-      <p class="w3-text-grey">lechuga, tomate y mahonesa.</p>
-      <hr>
-      
-      <h1><b>8. Yogui</b><span class="w3-right w3-tag w3-dark-grey w3-round">4.30 €</span></h1>
-      <p class="w3-text-grey">queso, bacon, anchoas, lechuga, tomate y mahonesa.</p>
-      <hr>
-      
-      <h1><b>9. Super Yogui</b> <span class="w3-tag w3-red w3-round">Recomendada</span><span class="w3-right w3-tag w3-dark-grey w3-round">4.30 €</span></h1>
-      <p class="w3-text-grey">queso, bacon, jamón serrano, huevo, lechuga, tomate y mahonesa.</p>
-      <hr>
-     
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Pitufos</h1>
     </div>
-
-<!-- Menu Perritos -->
-    <div id="Perritos" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>10. Normal</b> <span class="w3-right w3-tag w3-dark-grey w3-round">3.40 €</span></h1>
-      <p class="w3-text-grey">cebolla, ketchup y mostaza.</p>
-      <hr>
-   
-      <h1><b>11. Queso</b> <span class="w3-right w3-tag w3-dark-grey w3-round">3.60 €</span></h1>
-      <p class="w3-text-grey">queso, lechuga, tomate y mahonesa.</p>
-      <hr>
-      
-      <h1><b>12. Bacon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">3.90 €</span></h1>
-      <p class="w3-text-grey">bacon, lechuga, tomate y mahonesa.</p>
-      <hr>
-
-      <h1><b>13. Queso Bacon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">4.50 €</span></h1>
-      <p class="w3-text-grey">queso, bacon, lechuga, tomate y mahonesa.</p>
-      
-      <h1><b>14. Yogui</b> <span class="w3-tag w3-red w3-round">Recomendado</span><span class="w3-right w3-tag w3-dark-grey w3-round">3.90 €</span></h1>
-      <p class="w3-text-grey">bacon, queso, huevo, tomate, lechuga y mahonesa.</p>
-      
-      <h1><b>15. Super Yogui</b> <span class="w3-right w3-tag w3-dark-grey w3-round">4.50 €</span></h1>
-      <p class="w3-text-grey">queso, bacon, anchoas, cebolla y ketchup.</p>
+    <div class="w3-container">
+        <h5>1. Completa <b>3.40 €</b></h5>
+        <p class="w3-text-grey">lechuga, tomate, cebolla, mahonesa, ketchup y mostaza.</p>
+        <h5>2. Queso <b>3.80 €</b></h5>
+        <p class="w3-text-grey">queso, lechuga, tomate y mahonesa.</p>
+        <h5>3. Bacon <b>3.80 €</b></h5>
+        <p class="w3-text-grey">bacon, lechuga, tomate y mahonesa.</p>
+        <h5>4. Queso Bacon <b>4.10 €</b></h5>
+        <p class="w3-text-grey">queso, bacon, lechuga, tomate y mahonesa.</p>
+        <h5>5. Serrana <b>4.10 €</b></h5>
+        <p class="w3-text-grey">queso, jamón serrano, lechuga, tomate y mahonesa.</p>
+        <h5>6. Cresta <b>3.90 €</b></h5>
+        <p class="w3-text-grey">lechuga, tomate y mahonesa.</p>
+        <h5>7. Mixta <b>4.30 €</b></h5>
+        <p class="w3-text-grey">lechuga, tomate y mahonesa.</p>
+        <h5>8. Yogui <b>4.30 €</b> <span class="w3-tag w3-red w3-round">Recomendada</span></h5>
+        <p class="w3-text-grey">queso, bacon, anchoas, lechuga, tomate y mahonesa.</p>
+        <h5>9. Super Yogui <b>4.30 €</b></h5>
+        <p class="w3-text-grey">queso, bacon, jamón serrano, huevo, lechuga, tomate y mahonesa.</p>
+       <br>
     </div>
-
-<!-- Menu Camperos -->
-
-    <div id="Camperos" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>16. Normal</b><span class="w3-right w3-tag w3-dark-grey w3-round">3.50 €</span></h1>
-      <p class="w3-text-grey">jamón, queso, lechuga, tomate y mahonesa.</p>
-      <hr>
+   </div>
+</div>
+    
+    <!-- Menu Pizzas -->
+<div id="pizza" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('pizza').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Pizzas</h1>
+    </div>
+    <div class="w3-container">
+        <h5>46. Margarita <b>7.20 €</b></h5>
+        <p class="w3-text-grey">tomate y queso.</p>
+        <h5>47. Caleña <b>8.40 €</b></h5>
+        <p class="w3-text-grey">tomate, queso, atún, anchoas, cebolla y gambas.</p>
+        <h5>48. Vesubio <b>7.30 €</b></h5>
+        <p class="w3-text-grey">tomate, queso y jamón cocido.</p>
+        <h5>49. Roquefort <b>7.90 €</b></h5>
+        <p class="w3-text-grey">tomate, queso, jamón cocido y roquefort.</p>
+        <h5>50. Pompei <b>7.30 €</b></h5>
+        <p class="w3-text-grey">tomate, queso y champiñones.</p>
+        <h5>51. Caprichosa <b>7.70 €</b></h5>
+        <p class="w3-text-grey">tomate, queso, jamón cocido y champiñones.</p>
+        <h5>52. Busola <b>7.70 €</b></h5>
+        <p class="w3-text-grey">tomate, queso, jamón cocido y gambas.</p>
+        <h5>53. Yogui <b>7.80 €</b> </h5>
+        <p class="w3-text-grey">tomate, queso, jamón, champiñones, atún y pimientos.</p>
+        <h5>54. Cuatro Quesos <b>7.70 €</b></h5>
+        <p class="w3-text-grey">tomate, surtido de quesos y orégano.</p>
+        <h5>55. Napolitana <b>7.70 €</b></h5>
+        <p class="w3-text-grey">tomate, queso, anchoas y aceitunas.</p>
+        <h5>56. Altono <b>7.70 €</b></h5>
+        <p class="w3-text-grey">tomate, queso, atún y aceitunas.</p>
+        <h5>57. Amigo <b>7.80 €</b></h5>
+        <p class="w3-text-grey">tomate, queso, jamón cocido y atún.</p>
+        <h5>58. Opera <b>7.60 €</b></h5>
+        <p class="w3-text-grey">tomate, queso, bacon y cebolla.</p>
+        <h5>59. Pescador <b>7.70 €</b></h5>
+        <p class="w3-text-grey">tomate, queso, jamón cocido, atún y cebolla.</p>
+        <h5>60. Escandinava <b>7.70 €</b></h5>
+        <p class="w3-text-grey">tomate, queso, salchichas, pimiento y cebolla.</p>
+        <h5>61. Luigi <b>7.80 €</b></h5>
+        <p class="w3-text-grey">tomate, queso, jamón cocido, champiñones, atún y gambas.</p>
+        <h5>62. Lorena <b>7.80 €</b></h5>
+        <p class="w3-text-grey">tomate, queso, jamón cocido, champiñones, cebolla y gambas.</p>
+        <h5>63. Rossini <b>7.80 €</b> <span class="w3-tag w3-red w3-round">Recomendada</span></h5>
+        <p class="w3-text-grey">tomate, queso, jamón cocido, bacon, pimientos y cebolla.</p>
+        <h5>64. Superyogui <b>7.90 €</b></h5>
+        <p class="w3-text-grey">tomate, queso, jamón cocido, champiñones, anchoas y aceitunas.</p>
+        <h5>65. Cuatro Estaciones <b>7.80 €</b></h5>
+        <p class="w3-text-grey">tomate, queso, jamón cocido, gambas y cebolla.</p>
+        <h5>66. Vegetariana <b>7.80 €</b></h5>
+        <p class="w3-text-grey">tomate, queso, champiñones, cebolla y pimiento.</p>
+        <h5>67. Bubu <b>7.80 €</b></h5>
+        <p class="w3-text-grey">tomate, queso, jamón cocido, pollo y pimiento.</p>
+        <h5>68. Especial Bubu <b>8.40 €</b> <span class="w3-tag w3-red w3-round">Recomendada</span></h5>
+        <p class="w3-text-grey">tomate, queso, jamón cocido, pollo, huevo, maíz y pimiento.</p>
+        <h5>69. Daniela <b>8.10 €</b></h5>
+        <p class="w3-text-grey">tomate, queso, roquefort, bacon y cebolla.</p>
+       <br>
+    </div>
+   </div>
+</div>
+    
+    
+    
+    <!-- Menu Perritos -->
+    <div id="hotdog" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('hotdog').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Perritos</h1>
+    </div>
+    <div class="w3-container">
+       <h5>10. Normal <b>3.40 €</b></h5>
+        <p class="w3-text-grey">cebolla, ketchup y mostaza.</p>
+        <h5>11. Queso <b>3.60 €</b></h5>
+        <p class="w3-text-grey">queso, lechuga, tomate y mahonesa.</p>
+        <h5>12. Bacon <b>3.90 €</b></h5>
+        <p class="w3-text-grey">bacon, lechuga, tomate y mahonesa.</p>
+        <h5>13. Queso Bacon <b>4.50 €</b></h5>
+        <p class="w3-text-grey">queso, bacon, lechuga, tomate y mahonesa.</p>
+        <h5>14. Yogui <b>3.90 €</b></h5>
+        <p class="w3-text-grey">bacon, queso, huevo, tomate, lechuga y mahonesa.</p>
+        <h5>15. Super Yogui <b>4.50 €</b> <span class="w3-tag w3-red w3-round">Recomendado</span></h5>
+        <p class="w3-text-grey">queso, bacon, anchoas, cebolla y ketchup.</p>
+       <br>
+    </div>    
+   </div>
+</div>
+    
+    <!-- Menu Ensaladas -->
+<div id="menu4" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('menu4').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Ensaladas</h1>
+    </div>
+    <div class="w3-container">
+        <h5>40. Especial Yogui <b>5.90 €</b></h5>
+        <p class="w3-text-grey">atún, bocas de mar, gambas, lechuga, tomate, cebolla y salsa rosa.</p>
+        <h5>41. Mixta <b>5.90 €</b></h5>
+        <p class="w3-text-grey">lechuga, tomate cebolla, atún y aceitunas.</p>
+        <h5>42. Yogui <b>5.90 €</b></h5>
+        <p class="w3-text-grey">lechuga, tomate, zanahorias, maíz y salsa rosa.</p>
+        <h5>43. Miel y Mostaza <b>5.90 €</b></h5>
+        <p class="w3-text-grey">lechuga, queso, bacon, pasas, mostaza dulce y miel.</p>
+        <h5>44. Ensalada César <b>5.90 €</b></h5>
+        <p class="w3-text-grey">lechuga, pollo, queso, bacon y salsa cesar.</p>
+        <h5>45. Ensalada Campesina <b>5.90 €</b> </h5>
+        <p class="w3-text-grey">lechuga, pollo, cebolla, maíz, zanahoria, ali-oli y orégano.</p>
+       <br>
+     </div>
+   </div>
+</div>
    
-      <h1><b>17. Atún</b> <span class="w3-right w3-tag w3-dark-grey w3-round">3.90 €</span></h1>
-      <p class="w3-text-grey">atún, jamón, queso, lechuga, tomate y mahonesa.</p>
-      <hr>
-      
-      <h1><b>18. Anchoas</b> <span class="w3-right w3-tag w3-dark-grey w3-round">3.90 €</span></h1>
-      <p class="w3-text-grey">anchoas, jamón, queso, lechuga, tomate y mahonesa.</p>
-      <hr>
-      
-      <h1><b>19. Tortilla</b> <span class="w3-right w3-tag w3-dark-grey w3-round">3.90 €</span></h1>
-      <p class="w3-text-grey">tortilla francesa, jamón, queso, lechuga, tomate y mahonesa.</p>
-      <hr>
-      
-      <h1><b>20. Lomo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">3.90 €</span></h1>
-      <p class="w3-text-grey">lomo adobado, jamón, queso, lechuga, tomate y mahonesa.</p>
-      <hr>
-      
-      <h1><b>21. Pollo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">3.90 €</span></h1>
-      <p class="w3-text-grey">pollo, jamón, queso, lechuga, tomate y mahonesa.</p>
-      <hr>
-      
-      <h1><b>22. Bacon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">3.90 €</span></h1>
-      <p class="w3-text-grey">bacon, jamón, queso, lechuga, tomate y mahonesa.</p>
-      <hr>
-      
-      <h1><b>23. Hamburguesa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">3.90 €</span></h1>
-      <p class="w3-text-grey">hamburguesa, jamón, queso, lechuga, tomate y mahonesa.</p>
-      <hr>
-      
-      <h1><b>24. Yogui</b> <span class="w3-tag w3-red w3-round">Recomendado</span><span class="w3-right w3-tag w3-dark-grey w3-round">4.20 €</span></h1>
-      <p class="w3-text-grey">bacon, huevo, jamón, queso, lechuga, tomate y mahonesa.</p>
-      <hr>
-      
-      <h1><b>25. Caleño</b> <span class="w3-right w3-tag w3-dark-grey w3-round">4.20 €</span></h1>
-      <p class="w3-text-grey">cerdo, huevo, jamón, queso y mahonesa.</p>
-      <hr>
-      
-      <h1><b>26. Caleño de Pollo</b> <span class="w3-tag w3-red w3-round">Recomendado</span><span class="w3-right w3-tag w3-dark-grey w3-round">4.20 €</span></h1>
-      <p class="w3-text-grey">pollo, huevo, jamón, queso y mahonesa.</p>
-      <hr>
-      
-      <h1><b>27. Especial Yogui</b> <span class="w3-tag w3-red w3-round">Recomendado</span><span class="w3-right w3-tag w3-dark-grey w3-round">4.60 €</span></h1>
-      <p class="w3-text-grey">pollo, huevo, pimiento frito, jamón, queso y mahonesa.</p>
-      <hr>
-      
-      <h1><b>28. Bubu</b> <span class="w3-tag w3-red w3-round">Recomendado</span><span class="w3-right w3-tag w3-dark-grey w3-round">4.60 €</span></h1>
-      <p class="w3-text-grey">bacon, pollo, roquefort, jamón cocido, queso, lechuga, tomate y 		mahonesa.</p>
-      
+    <!-- Menu Bebidas -->
+<div id="menu5" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('menu5').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Bebidas</h1>
+    </div>
+    <div class="w3-container">
+        <h5>Pepsi cola <b>1.40 €</b></h5>
+        <h5>Pepsi cola light <b>1.40 €</b></h5>
+        <h5>Pepsi cola zero <b>1.40 €</b></h5>
+        <h5>Kas naranja <b>1.40 €</b></h5>
+        <h5>Kas limón <b>1.40 €</b></h5>
+        <h5>Seven up <b>1.40 €</b></h5>
+        <h5>Lipton ice <b>1.40 €</b></h5>
+        <h5>Aquarade limón <b>1.40 €</b></h5>
+        <h5>Zumos <b>1.50 €</b></h5>
+        <h5>Agua <b>1.40 €</b></h5>
+        <h5>Cerveza lata <b>1.60 €</b></h5>
+        <h5>Cerveza lata sin <b>1.60 €</b></h5>
+        <h5>Cerveza caña <b>1.50 €</b></h5>
+        <h5>Tinto de verano <b>1.60 €</b></h5>
+        <br>
+    </div>
+   </div>
+</div>
+    
+    <!-- Menu Papas Asadas -->
+<div id="menu6" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('menu6').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Papas Asadas</h1>
       </div>
-     
+    <div class="w3-container">
+        <h5>70. Jamón <b>5.10 €</b></h5>
+        <p class="w3-text-grey">jamón, alioli, maíz y aceitunas.</p>
+        <h5>71. Atún <b>5.90 €</b></h5>
+        <p class="w3-text-grey">atún, alioli, maíz y aceitunas.</p>
+        <h5>72. Queso <b>5.10 €</b></h5>
+        <p class="w3-text-grey">queso, alioli, maíz y aceitunas.</p>
+        <h5>73. Pollo <b>5.30 €</b></h5>
+        <p class="w3-text-grey">pollo, alioli, maíz y aceitunas.</p>
+        <h5>74. Marinera <b>5.40 €</b></h5>
+        <p class="w3-text-grey">atún, gambas, bocas de mar, alioli, maíz y aceitunas.</p>
+        <h5>75. Completa <b>5.50 €</b> <span class="w3-tag w3-red w3-round">Recomendada</span></h5>
+        <p class="w3-text-grey">atún, jamón cocido, gambas, bocas de mar, alioli, maíz y aceitunas.</p>
+        <h5>76. Yogui <b>5.30 €</b></h5>
+        <p class="w3-text-grey">queso, jamón, alioli, maíz y aceitunas.</p>
+       <br>
+    </div>
+   </div>
+</div>
+    
+    <!-- Menu Acompañamientos -->
+<div id="menu7" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('menu7').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Acompañamientos</h1>
+    </div>
+    <div class="w3-container">
+        <h5>77. Patatas Fritas <b>2.40 €</b></h5>
+        <h5>78. Nuggets de pollo <b>4.30  €</b></h5>
+        <h5>79. Patatas Ali oli y oregano <b>2.40 €</b></h5>
+        <br>
+    </div>
+   </div>
+</div>
+    
+    <!-- Menu Pepitos -->
+<div id="menu3" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('menu3').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Pepitos</h1>
+    </div>
+    <div class="w3-container">
+        <h5>32. Normal <b>3.50 €</b></h5>
+        <p class="w3-text-grey">lomo adobado, lechuga, tomate y mahonesa.</p>
+        <h5>33. Yogui <b>3.50 €</b></h5>
+        <p class="w3-text-grey">cerdo, lechuga, tomate y mahonesa.</p>
+        <h5>34. Especial Yogui <b>3.90 €</b></h5>
+        <p class="w3-text-grey">pollo, bacon, queso, lechuga, tomate y mahonesa.</p>
+        <h5>35. Serranito <b>3.90 €</b></h5>
+        <p class="w3-text-grey">cerdo, pimiento frito, jamón serrano y mahonesa.</p>
+        <h5>36. Serranito de Pollo <b>3.90 €</b> <span class="w3-tag w3-red w3-round">Recomendado</span></h5>
+        <p class="w3-text-grey">pollo, pimiento frito, jamón serrano y mahonesa.</p>
+        <h5>37. Pollo <b>3.70 €</b> </h5>
+        <p class="w3-text-grey">pollo, lechuga, tomate y mahonesa.</p>
+        <h5>38. Chicle <b>3.70 €</b> </h5>
+        <p class="w3-text-grey">jamón, queso, lechuga, tomate y mahonesa.</p>
+        <h5>39. Bubu <b>4.30 €</b> </h5>
+        <p class="w3-text-grey">pollo, roquefort, jamón serrano, cebolla y mahonesa.</p>
+       <br>
+        
+    </div>
+   </div>
+</div>
+    <!-- Menu Camperos new -->
+        
+     <div id="camp" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('camp').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Camperos</h1>
+    </div>
+    <div class="w3-container">
+       <h5>16. Normal <b>3.50 €</b></h5>
+        <p class="w3-text-grey">jamón, queso, lechuga, tomate y mahonesa.</p>
+        <h5>17. Atún <b>3.90 €</b></h5>
+        <p class="w3-text-grey">atún, jamón, queso, lechuga, tomate y mahonesa.</p>
+        <h5>18. Anchoas <b>3.90 €</b></h5>
+        <p class="w3-text-grey">anchoas, jamón, queso, lechuga, tomate y mahonesa.</p>
+        <h5>19. Tortilla <b>3.90 €</b></h5>
+        <p class="w3-text-grey">tortilla francesa, jamón, queso, lechuga, tomate y mahonesa.</p>
+        <h5>20. Lomo <b>3.90 €</b></h5>
+        <p class="w3-text-grey">lomo adobado, jamón, queso, lechuga, tomate y mahonesa.</p>
+        <h5>21. Pollo <b>3.90 €</b></h5>
+        <p class="w3-text-grey">pollo, jamón, queso, lechuga, tomate y mahonesa.</p>
+        <h5>22. Bacon <b>3.90 €</b></h5>
+        <p class="w3-text-grey">bacon, jamón, queso, lechuga, tomate y mahonesa.</p>
+        <h5>23. Hamburguesa <b>3.90 €</b> </h5>
+        <p class="w3-text-grey">hamburguesa, jamón, queso, lechuga, tomate y mahonesa.</p>
+        <h5>24. Yogui <b>4.30 €</b> <span class="w3-tag w3-red w3-round">Recomendado</span></h5>
+        <p class="w3-text-grey">bacon, huevo, jamón, queso, lechuga, tomate y mahonesa.</p>
+        <h5>25. Caleño <b>4.20 €</b></h5>
+        <p class="w3-text-grey">cerdo, huevo, jamón, queso y mahonesa.</p>
+         <h5>26. Caleño de Pollo <b>4.20 €</b> <span class="w3-tag w3-red w3-round">Recomendado</span></h5>
+        <p class="w3-text-grey">pollo, huevo, jamón, queso y mahonesa.</p>
+         <h5>27. Especial Yogui <b>4.60 €</b> <span class="w3-tag w3-red w3-round">Recomendado</span></h5>
+        <p class="w3-text-grey">pollo, huevo, pimiento frito, jamón, queso y mahonesa.</p>
+         <h5>28. Bubu <b>4.30 €</b> <span class="w3-tag w3-red w3-round">Recomendado</span></h5>
+        <p class="w3-text-grey">bacon, pollo, roquefort, jamón cocido, queso, lechuga, tomate y mahonesa.</p>
+       <br>
+      </div>  
+   </div>
+</div>   
+        
+        
+        
+        
+    
+
 <!-- Menu Pinchitos -->
-
- <div id="Pinchitos" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>29. Normal</b><span class="w3-right w3-tag w3-dark-grey w3-round">3.50 €</span></h1>
-      <p class="w3-text-grey">lechuga, tomate y mahonesa.</p>
-      <hr>
-   
-      <h1><b>30. Yogui</b><span class="w3-right w3-tag w3-dark-grey w3-round">3.50 €</span></h1>
-      <p class="w3-text-grey">cebolla plancha y mahonesa.</p>
-      <hr>
-
-      <h1><b>31. Super Yogui</b> <span class="w3-tag w3-red w3-round">Favorito</span><span class="w3-right w3-tag w3-dark-grey w3-round">4.20 €</span></h1>
-      <p class="w3-text-grey">cebolla plancha, huevo, bacon y mahonesa.</p>
-      <hr>
-      
-      </div>
-
-
-<!-- Menu Pepitos -->
-
- <div id="Pepitos" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>31. Normal</b><span class="w3-right w3-tag w3-dark-grey w3-round">3.50 €</span></h1>
-      <p class="w3-text-grey">lomo adobado, lechuga, tomate y mahonesa.</p>
-      <hr>
-   
-      <h1><b>33. Yogui</b><span class="w3-right w3-tag w3-dark-grey w3-round">3.50 €</span></h1>
-      <p class="w3-text-grey">cerdo, lechuga, tomate y mahonesa.</p>
-      <hr>
-
-      <h1><b>34. Especial Yogui</b><span class="w3-right w3-tag w3-dark-grey w3-round">3.90 €</span></h1>
-      <p class="w3-text-grey">pollo, bacon, queso, lechuga, tomate y mahonesa.</p>
-      <hr>
-      
-      <h1><b>35. Serranito</b><span class="w3-right w3-tag w3-dark-grey w3-round">3.90 €</span></h1>
-      <p class="w3-text-grey">cerdo, pimiento frito, jamón serrano y mahonesa.</p>
-      <hr>
-      
-      <h1><b>36. Serranito de Pollo</b> <span class="w3-tag w3-red w3-round">Recomendado</span><span class="w3-right w3-tag w3-dark-grey w3-round">3.90 €</span></h1>
-      <p class="w3-text-grey">pollo, pimiento frito, jamón serrano y mahonesa.</p>
-      <hr>
-      
-      <h1><b>37. Pollo</b><span class="w3-right w3-tag w3-dark-grey w3-round">3.70 €</span></h1>
-      <p class="w3-text-grey">pollo, lechuga, tomate y mahonesa.</p>
-      <hr>
-      
-      <h1><b>38. Chicle</b><span class="w3-right w3-tag w3-dark-grey w3-round">3.70 €</span></h1>
-      <p class="w3-text-grey">jamón, queso, lechuga, tomate y mahonesa.</p>
-      <hr>
-      
-      <h1><b>39. Bubu</b><span class="w3-right w3-tag w3-dark-grey w3-round">4.30 €</span></h1>
-      <p class="w3-text-grey">pollo, roquefort, jamón serrano, cebolla y mahonesa.</p>
-      <hr>
-      
-      </div>
-      
-<!-- Menu Ensaladas -->
-
- <div id="Ensaladas" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>40. Especial Yogui</b><span class="w3-right w3-tag w3-dark-grey w3-round">5.90 €</span></h1>
-      <p class="w3-text-grey">atún, bocas de mar, gambas, lechuga, tomate, 
-	cebolla y salsa rosa.</p>
-      <hr>
-   
-      <h1><b>41. Mixta</b><span class="w3-right w3-tag w3-dark-grey w3-round">5.90 €</span></h1>
-      <p class="w3-text-grey">lechuga, tomate  cebolla, atún y aceitunas.</p>
-      <hr>
-
-      <h1><b>42. Yogui</b><span class="w3-right w3-tag w3-dark-grey w3-round">5.90 €</span></h1>
-      <p class="w3-text-grey">lechuga, tomate, zanahorias, maíz y salsa rosa.</p>
-      <hr>
-      
-      <h1><b>43. Miel y Mostaza</b><span class="w3-right w3-tag w3-dark-grey w3-round">5.90 €</span></h1>
-      <p class="w3-text-grey">lechuga, queso, bacon, pasas, mostaza dulce y miel.</p>
-      <hr>
-      
-      <h1><b>44. Ensalada César</b> <span class="w3-right w3-tag w3-dark-grey w3-round">5.90 €</span></h1>
-      <p class="w3-text-grey">lechuga, pollo, queso, bacon y salsa cesar.</p>
-      <hr>
-      
-      <h1><b>45. Ensalada Campesina</b><span class="w3-right w3-tag w3-dark-grey w3-round">5.90 €</span></h1>
-      <p class="w3-text-grey">lechuga, pollo, cebolla, maíz, zanahoria, ali-oli y orégano. </p>
-      <hr>
-      
-      </div>
-      
-<!-- Menu Pizzas -->
-
- <div id="Pizzas" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>46. Margarita</b><span class="w3-right w3-tag w3-dark-grey w3-round">7.20 €</span></h1>
-      <p class="w3-text-grey">tomate y queso.</p>
-      <hr>
-   
-      <h1><b>47. Caleña</b><span class="w3-right w3-tag w3-dark-grey w3-round">8.40 €</span></h1>
-      <p class="w3-text-grey">tomate, queso, atún, anchoas, cebolla y gambas.</p>
-      <hr>
-
-      <h1><b>48. Vesubio</b><span class="w3-right w3-tag w3-dark-grey w3-round">7.30 €</span></h1>
-      <p class="w3-text-grey">tomate, queso y jamón cocido.</p>
-      <hr>
-      
-      <h1><b>49. Roquefort</b><span class="w3-right w3-tag w3-dark-grey w3-round">7.90 €</span></h1>
-      <p class="w3-text-grey">tomate, queso, jamón cocido y roquefort.</p>
-      <hr>
-      
-      <h1><b>50. Pompei</b> <span class="w3-right w3-tag w3-dark-grey w3-round">7.30 €</span></h1>
-      <p class="w3-text-grey">tomate, queso y champiñones.</p>
-      <hr>
-      
-      <h1><b>51. Caprichosa</b><span class="w3-right w3-tag w3-dark-grey w3-round">7.70 €</span></h1>
-      <p class="w3-text-grey">tomate, queso, jamón cocido y champiñones.</p>
-      <hr>
-      
-      <h1><b>52. Busola</b><span class="w3-right w3-tag w3-dark-grey w3-round">7.70 €</span></h1>
-      <p class="w3-text-grey">tomate, queso, jamón cocido y gambas.</p>
-      <hr>
-      
-      <h1><b>53. Yogui</b><span class="w3-right w3-tag w3-dark-grey w3-round">7.80 €</span></h1>
-      <p class="w3-text-grey">tomate, queso, jamón, champiñones, atún y pimientos.</p>
-      <hr>
-      
-      <h1><b>54. Cuatro Quesos</b><span class="w3-right w3-tag w3-dark-grey w3-round">7.70 €</span></h1>
-      <p class="w3-text-grey">tomate, surtido de quesos y orégano.</p>
-      <hr>
-      
-      <h1><b>55. Napolitana</b><span class="w3-right w3-tag w3-dark-grey w3-round">7.70 €</span></h1>
-      <p class="w3-text-grey">tomate, queso, anchoas y aceitunas.</p>
-      <hr>
-      
-      <h1><b>56. Altono</b><span class="w3-right w3-tag w3-dark-grey w3-round">7.70 €</span></h1>
-      <p class="w3-text-grey">tomate, queso, atún y aceitunas.</p>
-      <hr>
-      
-      <h1><b>57. Amigo</b><span class="w3-right w3-tag w3-dark-grey w3-round">7.80 €</span></h1>
-      <p class="w3-text-grey">tomate, queso, jamón cocido y atún.</p>
-      <hr>
-      
-      <h1><b>58. Opera</b><span class="w3-right w3-tag w3-dark-grey w3-round">7.60 €</span></h1>
-      <p class="w3-text-grey">tomate, queso, bacon y cebolla.</p>
-      <hr>
-      
-      <h1><b>59. Pescador</b><span class="w3-right w3-tag w3-dark-grey w3-round">7.70 €</span></h1>
-      <p class="w3-text-grey">tomate, queso, jamón cocido, atún y cebolla.</p>
-      <hr>
-      
-      <h1><b>60. Escandinava</b><span class="w3-right w3-tag w3-dark-grey w3-round">7.70 €</span></h1>
-      <p class="w3-text-grey">tomate, queso, salchichas, pimiento y cebolla.</p>
-      <hr>
-      
-      <h1><b>61. Luigi</b><span class="w3-right w3-tag w3-dark-grey w3-round">7.80 €</span></h1>
-      <p class="w3-text-grey">tomate, queso, jamón cocido, champiñones, atún y gambas.</p>
-      <hr>
-      
-      <h1><b>62. Lorena</b><span class="w3-right w3-tag w3-dark-grey w3-round">7.80 €</span></h1>
-      <p class="w3-text-grey">tomate, queso, jamón cocido, champiñones, cebolla y gambas.</p>
-      <hr>
-      
-      <h1><b>63. Rossini</b> <span class="w3-tag w3-red w3-round">Recomendada</span><span class="w3-right w3-tag w3-dark-grey w3-round">7.80 €</span></h1>
-      <p class="w3-text-grey">tomate, queso, jamón cocido, bacon, pimientos y cebolla.</p>
-      <hr>
-      
-      <h1><b>64. Superyogui</b><span class="w3-right w3-tag w3-dark-grey w3-round">7.90 €</span></h1>
-      <p class="w3-text-grey">tomate, queso, jamón cocido, champiñones, anchoas y aceitunas.</p>
-      <hr>
-      
-      <h1><b>65. Cuatro Estaciones</b><span class="w3-right w3-tag w3-dark-grey w3-round">7.80 €</span></h1>
-      <p class="w3-text-grey">tomate, queso, jamón cocido, gambas y cebolla.</p>
-      <hr>
-      
-      <h1><b>66. Vegetariana</b><span class="w3-right w3-tag w3-dark-grey w3-round">7.80 €</span></h1>
-      <p class="w3-text-grey">tomate, queso, champiñones, cebolla y pimiento.</p>
-      <hr>
-      
-      <h1><b>67. Bubu</b><span class="w3-right w3-tag w3-dark-grey w3-round">7.80 €</span></h1>
-      <p class="w3-text-grey">tomate, queso, jamón cocido, pollo y pimiento.</p>
-      <hr>
-      
-      <h1><b>68. Especial Bubu</b> <span class="w3-tag w3-red w3-round">Recomendada</span><span class="w3-right w3-tag w3-dark-grey w3-round">8.40 €</span></h1>
-      <p class="w3-text-grey">tomate, queso, jamón cocido, pollo, huevo, maíz y pimiento.</p>
-      <hr>
-      
-      <h1><b>69. Daniela</b><span class="w3-right w3-tag w3-dark-grey w3-round">8.10 €</span></h1>
-      <p class="w3-text-grey">tomate, queso,  roquefort, bacon y cebolla.</p>
-      <hr>
-      </div> 
-    
-<!-- Menu Papas Asadas -->
-
- <div id="Papas Asadas" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>70. Jamón</b><span class="w3-right w3-tag w3-dark-grey w3-round">5.10 €</span></h1>
-      <p class="w3-text-grey">jamón, alioli, maíz y aceitunas.</p>
-      <hr>
-   
-      <h1><b>71. Atún</b><span class="w3-right w3-tag w3-dark-grey w3-round">5.90 €</span></h1>
-      <p class="w3-text-grey">atún, alioli, maíz y aceitunas.</p>
-      <hr>
-
-      <h1><b>72. Queso</b><span class="w3-right w3-tag w3-dark-grey w3-round">5.10 €</span></h1>
-      <p class="w3-text-grey">queso, alioli, maíz y aceitunas.</p>
-      <hr>
-      
-      <h1><b>73. Pollo</b><span class="w3-right w3-tag w3-dark-grey w3-round">5.30 €</span></h1>
-      <p class="w3-text-grey">pollo, alioli, maíz y aceitunas.</p>
-      <hr>
-      
-      <h1><b>74. Marinera</b> <span class="w3-right w3-tag w3-dark-grey w3-round">5.40 €</span></h1>
-      <p class="w3-text-grey">atún, gambas, bocas de mar, alioli, maíz y aceitunas.</p>
-      <hr>
-      
-      <h1><b>75. Completa</b> <span class="w3-tag w3-red w3-round">Recomendada</span><span class="w3-right w3-tag w3-dark-grey w3-round">5.50 €</span></h1>
-      <p class="w3-text-grey">atún, jamón cocido, gambas, bocas de mar, alioli, maíz y aceitunas.</p>
-      <hr>
-      
-       <h1><b>76. Yogui</b> <span class="w3-right w3-tag w3-dark-grey w3-round">5.30 €</span></h1>
-      <p class="w3-text-grey">queso, jamón, alioli, maíz y aceitunas.</p>
-      <hr>
-      
-      </div>    
-    
-<!-- Menu Acompañamientos -->
-
- <div id="Acompañamientos" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>77. Patatas Fritas</b><span class="w3-right w3-tag w3-dark-grey w3-round">2.40 €</span></h1>
-      <p class="w3-text-grey"></p>
-      <hr>
-   
-      <h1><b>78. Nuggets de pollo</b><span class="w3-right w3-tag w3-dark-grey w3-round">4.30 €</span></h1>
-      <p class="w3-text-grey"></p>
-      <hr>
-
-      <h1><b>79. Patatas Ali oli y oregano</b><span class="w3-right w3-tag w3-dark-grey w3-round">2.40 €</span></h1>
-      <p class="w3-text-grey"></p>
-      <hr>
-     
-     </div>  
-    
-<!-- Menu Bebidass -->
-
- <div id="Bebidas" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Pepsi cola</b><span class="w3-right w3-tag w3-dark-grey w3-round">1.40 €</span></h1>
-      <p class="w3-text-grey"></p>
-      <hr>
-   
-      <h1><b>Pepsi cola light</b><span class="w3-right w3-tag w3-dark-grey w3-round">1.40 €</span></h1>
-      <p class="w3-text-grey"></p>
-      <hr>
-
-      <h1><b>Pepsi cola zero</b><span class="w3-right w3-tag w3-dark-grey w3-round">1.40 €</span></h1>
-      <p class="w3-text-grey"></p>
-      <hr>
-      
-      <h1><b>Kas naranja</b><span class="w3-right w3-tag w3-dark-grey w3-round">1.40 €</span></h1>
-      <p class="w3-text-grey"></p>
-      <hr>
-      
-      <h1><b>Kas limón</b><span class="w3-right w3-tag w3-dark-grey w3-round">1.40 €</span></h1>
-      <p class="w3-text-grey"></p>
-      <hr>
-      
-      <h1><b>Seven up</b><span class="w3-right w3-tag w3-dark-grey w3-round">1.40 €</span></h1>
-      <p class="w3-text-grey"></p>
-      <hr>
-      
-      <h1><b>Lipton ice</b><span class="w3-right w3-tag w3-dark-grey w3-round">1.40 €</span></h1>
-      <p class="w3-text-grey"></p>
-      <hr>
-      
-      <h1><b>Aquarade limon</b><span class="w3-right w3-tag w3-dark-grey w3-round">1.40 €</span></h1>
-      <p class="w3-text-grey"></p>
-      <hr>
-      
-      <h1><b>Zumos</b><span class="w3-right w3-tag w3-dark-grey w3-round">1.50 €</span></h1>
-      <p class="w3-text-grey"></p>
-      <hr>
-      
-      <h1><b>Agua</b><span class="w3-right w3-tag w3-dark-grey w3-round">1.40 €</span></h1>
-      <p class="w3-text-grey"></p>
-      <hr>
-      
-      <h1><b>Cerveza lata</b><span class="w3-right w3-tag w3-dark-grey w3-round">1.60 €</span></h1>
-      <p class="w3-text-grey"></p>
-      <hr>
-      
-      <h1><b>Cerveza lata sin</b><span class="w3-right w3-tag w3-dark-grey w3-round">1.60 €</span></h1>
-      <p class="w3-text-grey"></p>
-      <hr>
-      
-      <h1><b>Cerveza caña</b><span class="w3-right w3-tag w3-dark-grey w3-round">1.50 €</span></h1>
-      <p class="w3-text-grey"></p>
-      <hr>
-      
-      <h1><b>Tinto de verano</b><span class="w3-right w3-tag w3-dark-grey w3-round">1.60 €</span></h1>
-      <p class="w3-text-grey"></p>
-      <hr>
-         
-         
-    </div><br>
-
-  </div>
-</div>
-
-<!-- About Container -->
-<div class="w3-container w3-padding-64 w3-red w3-xlarge" id="about">
-  <div class="w3-content">
-    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Info</h1>
-    <h1 class="w3-center w3-xxxlarge"><p><strong>Precios I.V.A. incluido.</strong> <br>
-Ingrediente extra: <br>
-en Pizza 0,80€ <br>
-en bocadillo 0,60€</p></h1>
-    <h1 class="w3-center w3-xxxlarge"><p><strong>MANTENGA LAS DISTANCIAS DE SEGURIDAD</strong></p></h1>
-     <h1 class="w3-center w3-xxlarge"><p>En nuestras intalaciones realizamos un protocolo de limpieza y desinfección
-constante, siguiendo las recomendaciones de las autoridades sanitarias.</p></h1>
-        <h1><b>Horario</b></h1>
-    
-    <div class="w3-row">
-      <div class="w3-col s12">
-        <p>- Rincón y Cala 
-            <br><br>
-           Todos los días de 19:00 a 00:00h <br>
-           Sábados y Domingos de 13:00 a 16:00h. 
-           <br>
-           - Centro Comercial
-           <br><br>
-           De Domingo a Jueves de 12:30 a 23:00h <br>
-           Viernes y Sábados de 12:30 a 00:00h</p>
-        </div>
+<div id="pinch" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-orange w3-display-container">
+      <span onclick="document.getElementById('pinch').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+      <h1>Pinchitos</h1>
+        
     </div>
-    
+     <div class="w3-container">
+        <h5>29. Normal <b>3.50 €</b></h5>
+        <p class="w3-text-grey">lechuga, tomate y mahonesa.</p>
+        <h5>30. Yogui <b>3.50 €</b></h5>
+        <p class="w3-text-grey">cebolla plancha y mahonesa.</p>
+        <h5>31. Super Yogui <b>4,20 €</b> <span class="w3-tag w3-red w3-round">Recomendado</span></h5>
+        <p class="w3-text-grey">cebolla plancha, huevo, bacon y mahonesa.</p>
+         
+         
+         
+         <br>
+     </div>
   </div>
-</div>
-
-
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
-  <p> <a href="" title="" target="_blank" class="w3-hover-text-green"></a></p>
-</footer>
-
-<script>
-// Tabbed Menu
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-red";
-}
-document.getElementById("myLink").click();
-</script>
+    
+    
+    
 
 </body>
 </html>
+
